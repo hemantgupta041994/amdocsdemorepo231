@@ -1,0 +1,31 @@
+step 1 : initialize git.
+$ git init
+
+step 2 : configure global username and email.
+$ git config --global user.name "username"
+$ git config --global user.email "user_email"
+
+step 3 : clone repository.
+$ git clone <repo url>
+
+step 4 : make sure that you are inside the project folder if no than go there.
+
+step 5 : list all branch
+$ git branch -a
+
+step 6 : checkout remote branch
+$ git checkout <branch_name>
+
+step 7 : use git pull
+$ git pull
+
+step 8 : Add files to git before commit you can use either (Note before add do not forget to take latest pull)
+$ git add . (To add all files)
+$ git add file_name (To add specific file)
+$ git status | grep -i 'modified:' | awk {'print $2'} | xargs git add (To add all modified files)
+
+step 9 : Do commit
+$ git commit -m "commit message"
+
+step 10 : Push changes to repo
+$ git push
